@@ -1,0 +1,63 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light background */
+    color: #333; /* Dark text for contrast */
+}
+
+h1, h3 {
+    color: #6c757d; /* Darker pastel color for headings */
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Navbar Styles */
+.navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #5a6268; /* Dark pastel color for brand */
+}
+
+.nav-link {
+    color: #6c757d; /* Dark pastel color for links */
+}
+
+.nav-link:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Container Styles */
+.container {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #ffffff; /* White background for content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* List Styles */
+.list-unstyled li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ffffff; /* White background for footer */
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    color: #6c757d; /* Dark pastel color for footer text */
+}
