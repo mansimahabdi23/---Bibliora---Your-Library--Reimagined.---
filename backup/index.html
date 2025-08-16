@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bibliora - Home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-light">
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
@@ -16,13 +16,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
+                    <a class="nav-link" href="#login">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="signup.html">Sign Up</a>
+                    <a class="nav-link" href="#signup">Sign Up</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="books.html">Featured Books</a>
+                    <a class="nav-link" href="#books">Featured Books</a>
                 </li>
             </ul>
             <form class="form-inline ml-3">
@@ -34,29 +34,34 @@
 
     <!-- Carousel for Featured Books -->
     <div id="featuredBooksCarousel" class="carousel slide mt-4" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#featuredBooksCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#featuredBooksCarousel" data-slide-to="1"></li>
+            <li data-target="#featuredBooksCarousel" data-slide-to="2"></li>
+        </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="book-cover1.jpg" class="d-block w-100" alt="Featured Book 1">
+                <img src="imgs/book-1.png" class="d-block w-100" alt="Featured Book 1">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Featured Book Title 1</h5>
                     <p>Short description of the featured book.</p>
-                    <a href="books.html" class="btn btn-primary">Explore Featured Books</a>
+                    <a href="#books" class="btn btn-primary">Explore Featured Books</a>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="book-cover2.jpg" class="d-block w-100" alt="Featured Book 2">
+                <img src="imgs/book-2.png" class="d-block w-100" alt="Featured Book 2">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Featured Book Title 2</h5>
                     <p>Short description of the featured book.</p>
-                    <a href="books.html" class="btn btn-primary">Explore Featured Books</a>
+                    <a href="#books" class="btn btn-primary">Explore Featured Books</a>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="book-cover3.jpg" class="d-block w-100" alt="Featured Book 3">
+                <img src="imgs/book-3.png" class="d-block w-100" alt="Featured Book 3">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Featured Book Title 3</h5>
                     <p>Short description of the featured book.</p>
-                    <a href="books.html" class="btn btn-primary">Explore Featured Books</a>
+                    <a href="#books" class="btn btn-primary">Explore Featured Books</a>
                 </div>
             </div>
         </div>
@@ -68,6 +73,49 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>Welcome to Bibliora</h1>
+                <p>Discover your next favorite book with our curated collection of literature from around the world. From classic novels to contemporary bestsellers, we have something for every reader.</p>
+                
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <h3>Popular Categories</h3>
+                        <ul class="list-unstyled">
+                            <li>📚 Fiction & Literature</li>
+                            <li>🔬 Science & Technology</li>
+                            <li>📖 History & Biography</li>
+                            <li>🎨 Arts & Culture</li>
+                            <li>🧠 Philosophy & Psychology</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Why Choose Bibliora?</h3>
+                        <ul class="list-unstyled">
+                            <li>✅ Curated Collections</li>
+                            <li>✅ Expert Recommendations</li>
+                            <li>✅ Easy Navigation</li>
+                            <li>✅ User Reviews</li>
+                            <li>✅ Reading Lists</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Quick Actions</h5>
+                        <p class="card-text">Get started with your reading journey today.</p>
+                        <a href="#login" class="btn btn-primary btn-block mb-2">Login</a>
+                        <a href="#signup" class="btn btn-outline-primary btn-block">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="text-center mt-5">
